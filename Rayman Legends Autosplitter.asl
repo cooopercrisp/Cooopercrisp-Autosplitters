@@ -1,9 +1,9 @@
-state("Rayman Legends")
+levelState("Rayman Legends")
 {
 	bool isLoading : "Rayman Legends.exe", 0x00AE483C, 0xf14;
 	bool isOnTicketScreen : "Rayman Legends.exe", 0x00AE16B4, 0x20;
 	bool isMenu : "Rayman Legends.exe", 0x00A4619C, 0x3c, 0x3c, 0x14;
-	int state : "Rayman Legends.exe", 0x00AE1678, 0x460, 0x5C8, 0x270, 0x69C, 0x7E4;
+	int levelState : "Rayman Legends.exe", 0x00AE1678, 0x460, 0x5C8, 0x270, 0x69C, 0x7E4;
 	int gameFrames : "Rayman Legends.exe", 0x000575C8, 0;
 }
 
@@ -23,11 +23,11 @@ reset
 
 split
 {
-	if (current.state == 16)
+	if (current.levelState == 16)
 	{
 		current.wasAtEndOfLevel = true;
 	}
-	if (old.state == 10 && current.state == 12 && current.wasAtEndOfLevel)
+	if (old.levelState == 10 && current.levelState == 12 && current.wasAtEndOfLevel)
 	{
 		current.wasAtEndOfLevel = false;
 		current.splitFrame = current.gameFrames + 84;

@@ -4,7 +4,7 @@ levelState("Rayman Legends")
 	bool isOnTicketScreen : "Rayman Legends.exe", 0x00AE16B4, 0x20;
 	bool isMenu : "Rayman Legends.exe", 0x00A4619C, 0x3c, 0x3c, 0x14;
 	int levelState : "Rayman Legends.exe", 0x00AE1678, 0x460, 0x5C8, 0x270, 0x69C, 0x7E4;
-	int gameFrames : "Rayman Legends.exe", 0x000575C8, 0x0;
+	int gameFrames : "Rayman Legends.exe", 0x000575C8, 0;
 }
 
 start

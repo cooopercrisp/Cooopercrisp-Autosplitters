@@ -1,4 +1,4 @@
-levelState("Rayman Legends")
+state("Rayman Legends")
 {
 	bool isLoading : "Rayman Legends.exe", 0x00AE483C, 0xf14;
 	bool isOnTicketScreen : "Rayman Legends.exe", 0x00AE16B4, 0x20;

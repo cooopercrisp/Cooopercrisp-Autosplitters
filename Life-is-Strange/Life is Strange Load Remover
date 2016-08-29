@@ -1,0 +1,9 @@
+state("LifeIsStrange")
+{
+	bool isNotLoading : "LifeIsStrange.exe", 0x1117848;
+}
+
+isLoading
+{
+	return !current.isNotLoading;
+}

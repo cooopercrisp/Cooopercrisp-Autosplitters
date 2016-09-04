@@ -25,7 +25,7 @@ split
 	{
 		vars.wasAtEndOfLevel = true;
 	}
-	if (old.levelState == 10 && current.levelState == 12 && current.wasAtEndOfLevel)
+	if (old.levelState == 10 && current.levelState == 12 && vars.wasAtEndOfLevel)
 	{
 		vars.wasAtEndOfLevel = false;
 		vars.splitFrame = current.gameFrames + 84;

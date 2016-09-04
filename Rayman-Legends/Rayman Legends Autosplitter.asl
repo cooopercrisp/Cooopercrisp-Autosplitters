@@ -27,7 +27,7 @@ split
 	}
 	if (old.levelState == 10 && current.levelState == 12 && current.wasAtEndOfLevel)
 	{
-		current.wasAtEndOfLevel = false;
+		vars.wasAtEndOfLevel = false;
 		vars.splitFrame = current.gameFrames + 84;
 	}
 	if (current.gameFrames >= vars.splitFrame)

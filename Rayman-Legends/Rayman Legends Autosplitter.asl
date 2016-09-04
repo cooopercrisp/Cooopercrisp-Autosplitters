@@ -10,7 +10,6 @@ state("Rayman Legends")
 start
 {
 	vars.wasAtEndOfLevel = false;
-	vars.gameFramesAtStart = current.gameFrames;
 	vars.splitFrame = null;
 	return old.isMenu && !current.isMenu;
 }
